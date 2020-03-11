@@ -13,3 +13,4 @@ bin/eosio.token.abi
 docs/index.md
 dev
 .vscode
+yarn.lock

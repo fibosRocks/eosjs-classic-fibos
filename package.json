@@ -1,7 +1,7 @@
 {
-  "name": "eosjs-classic",
-  "version": "16.0.11",
-  "description": "General purpose library for the EOS blockchain.",
+  "name": "eosjs-classic-fibos",
+  "version": "16.0.12",
+  "description": "General purpose library for the FIBOS blockchain.",
   "main": "lib/index.js",
   "files": [
     "README.md",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qiushaoxi/eosjs-classic.git"
+    "url": "git+https://github.com/fibosRocks/eosjs-classic-fibos.git"
   },
   "keywords": [
     "EOS",

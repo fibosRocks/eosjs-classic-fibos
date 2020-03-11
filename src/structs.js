@@ -174,7 +174,7 @@ const PublicKeyEcc = (validation) => {
 
     toObject (value) {
       if (validation.defaults && value == null) {
-        const keyPrefix = validation.keyPrefix ? validation.keyPrefix : 'EOS'
+        const keyPrefix = validation.keyPrefix ? validation.keyPrefix : 'FO'
         return keyPrefix + '6MRy..'
       }
       return value
