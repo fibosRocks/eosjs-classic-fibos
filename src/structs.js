@@ -157,14 +157,14 @@ const PublicKeyEcc = (validation) => {
       const bcopy = b.copy(b.offset, b.offset + 33)
       b.skip(33)
       const pubbuf = Buffer.from(bcopy.toBinary(), 'binary')
-      return PublicKey.fromBuffer(pubbuf).toString(validation.keyPrefix)
+      return PublicKey.fromBuffer(pubbuf).toString('FO')
     },
 
     appendByteBuffer (b, value) {
       // if(validation.debug) {
       //   console.error(`${value}`, 'PublicKeyType.appendByteBuffer')
       // }
-      const buf = PublicKey.fromStringOrThrow(value, validation.keyPrefix).toBuffer()
+      const buf = PublicKey.fromStringOrThrow(value, 'FO').toBuffer()
       b.append(buf.toString('binary'), 'binary')
     },
 
@@ -174,7 +174,7 @@ const PublicKeyEcc = (validation) => {
 
     toObject (value) {
       if (validation.defaults && value == null) {
-        const keyPrefix = validation.keyPrefix ? validation.keyPrefix : 'FO'
+        const keyPrefix = 'FO'
         return keyPrefix + '6MRy..'
       }
       return value
